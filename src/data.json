@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "_id":"dress1",
+            "title": "Vestido Corto Hojas Verano 2021",
+            "image":"/images/dress1.jpg",
+            "description": "about dress 1",
+            "price" : 19,
+            "availableSizes": ["XL", "XXL"]
+        }, 
+        {
+            "_id":"dress2",
+            "title": "Vestido Largo Verano 2021",
+            "image":"/images/dress2.jpg",
+            "description": "about dress 2",
+            "price" : 29,
+            "availableSizes": ["L", "XXL", "M", "S"]
+        }
+    ]
+}
