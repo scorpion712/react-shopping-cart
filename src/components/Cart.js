@@ -3,7 +3,7 @@ import formatCurrency from '../util';
 
 export default class Cart extends Component {
     render() {
-        const {cartItems} = this.props;
+        const {cartItems} = this.props; // get cartItems from App.js
         return (
             <div>
                 {cartItems.length === 0 ? <div className="cart cart-header">No ha cargado productos</div> 
@@ -19,7 +19,7 @@ export default class Cart extends Component {
                                 <div>
                                     <div>{item.title}</div>
                                     <div className="right">
-                                        {formatCurrency(item.price)} x {item.count}
+                                        {formatCurrency(item.price)} x {item.count} {" "}
                                         <button className="button" onClick={() => this.props.removeFromCart(item)}>Remove</button>
                                     </div>
                                 </div>
