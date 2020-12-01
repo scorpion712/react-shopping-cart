@@ -111,3 +111,14 @@ footer {
 .button-primary {
   background-color: #ffc040;
 }
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem #c0c0c0 solid; /* line to separate */
+}
+.filter div {
+  flex: 1;
+}
