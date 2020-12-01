@@ -15,6 +15,14 @@
             "description": "about dress 2",
             "price" : 29,
             "availableSizes": ["L", "XXL", "M", "S"]
+        }, 
+        {
+            "_id":"dress3",
+            "title": "Vestido Cuerpo Negro",
+            "image":"",
+            "description": "about dress 3",
+            "price" : 29,
+            "availableSizes": ["L", "XS", "M", "S"]
         }
     ]
 }
