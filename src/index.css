@@ -104,7 +104,7 @@ footer {
 .product-price div {
   font-size: 2rem;
 }
-.button {
+button {
   padding: 1rem;
   border: .1rem #c0c0c0c0 solid;
   background-color: #f0f0f0f0;
@@ -186,4 +186,26 @@ form {
 input {
   padding: 1rem;
   border: .1rem #c0c0c0 solid; 
+}
+/* Products details */
+.products-details {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  max-height: 96vh;
+}
+.products-details img {
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.products-details-description {
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 1000;
 }
