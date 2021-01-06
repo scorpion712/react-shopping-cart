@@ -26,7 +26,27 @@ const Product = mongoose.model("products", new mongoose.Schema({ // create new p
     availableSizes: [ String ]
     })
 ); 
+// define Order model
+const Order = mongoose.model("order", new mongoose.Schema({
+        _id: {
+            type: String,
+            default: shortid.generate
+        },
+        email: String,
+        name: String,
+        address: String,
+        total: Number,
+        cartItems: [{
+            _id: String,
+            title: String,
+            price: Number,
+            count: Number
+        }] 
+    },
+    {timestamps: true}
+));
 
+// API FOR PRODUCTS
 // HTTP GET METHOD
 app.get("/api/products", async (req, res) => {
     const products = await Product.find({}); //get all products    
@@ -43,6 +63,18 @@ app.delete("/api/products/:id", async(req, res) => {
    const deletedProduct = await Product.findByIdAndDelete(req.params.id);
    res.send(deletedProduct); 
 });
+// API FOR ORDERS
+app.post("/api/orders", async (req, res) => {
+   if (!req.body.name || 
+    !req.body.email || 
+    !req.body.address ||
+    !req.body.total ||
+    !req.body.cartItems ) {
+        return res.send({message: "Data is required."})
+    } 
+    const order = await Order(req.boty).save();
+    res.send(order);
+})
  
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("serve at http://localhost:3000/")); 
