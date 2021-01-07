@@ -209,3 +209,26 @@ input {
   top: 2.5rem;
   z-index: 1000;
 }
+
+/* Order details */
+.order-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-details li div {
+  padding: 10px;
+}
+.order-details .items {
+  text-align: right;
+}
+.success-message {
+  color: green;
+}
