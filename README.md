@@ -1,3 +1,3 @@
 # REACT SHOPPING CART
 
-# Step 1: Create React App
+# Create Basic Shopping App using HTML, CSS, JavaScript, React, Redux, Node and MongoDB
